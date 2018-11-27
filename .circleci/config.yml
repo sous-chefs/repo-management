@@ -6,18 +6,22 @@ executors:
   ruby:
     docker: [ image: circleci/ruby ]
 
+jobs:
+  lint_ruby:
+    executor: ruby
+    steps:
+      - checkout
+      - run:
+          name: Lint Ruby
+          command: |
+            gem install cookstyle --no-document
+            cookstyle
+
 workflows:
-  kitchen:
+  check:
     jobs:
       - kitchen/danger:
           name: danger
           context: Danger
       - lint_ruby:
-          executor: ruby
-          steps:
-            - checkout
-            - run:
-                name: Lint Ruby
-                command: |
-                  gem install cookstyle --no-document
-                  cookstyle
+          name: Lint Ruby
