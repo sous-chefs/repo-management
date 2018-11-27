@@ -2,11 +2,22 @@ version: 2.1
 
 orbs:
   kitchen: sous-chefs/kitchen@1.0.0
+executors:
+  ruby:
+    docker: [ image: circleci/ruby ]
 
 workflows:
   kitchen:
     jobs:
       - kitchen/danger:
           name: danger
-      - kitchen/lint:
-          name: lint
+          context: Danger
+      - lint_ruby:
+          executor: ruby
+          steps:
+            - checkout
+            - run:
+                name: Lint Ruby
+                command: |
+                  gem install cookstyle --no-document
+                  cookstyle
