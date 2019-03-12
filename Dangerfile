@@ -25,7 +25,6 @@ end
 
 fail 'Please provide a summary of your Pull Request.' if github.pr_body.length < 10
 
-
 # Require a CHANGELOG entry for non-test changes.
 if !git.modified_files.include?('CHANGELOG.md') && code_changes?
   fail 'Please include a [CHANGELOG](https://github.com/sous-chefs/<cookbook>/blob/master/CHANGELOG.md) entry. '\
