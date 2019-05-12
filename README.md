@@ -6,6 +6,10 @@
 
 A repo of helpful things for managing the many repos in sous-chefs org (easily updatable to use in other orgs)
 
+## Maintainers
+
+This cookbook is maintained by the Sous Chefs. The Sous Chefs are a community of Chef cookbook maintainers working together to maintain important cookbooks. If you’d like to know more please visit [sous-chefs.org](https://sous-chefs.org/) or come chat with us on the Chef Community Slack in [#sous-chefs](https://chefcommunity.slack.com/messages/C2V7B88SF).
+
 ## Usage
 
 Most scripts require you be in a directory containing all the repos you'd like to act on, for example:
