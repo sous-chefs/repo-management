@@ -20,5 +20,5 @@ Dir.glob('*').each do |dir|
   next unless teams.include?(dir)
   Dir.mkdir "#{Dir.pwd}/#{dir}/.github" unless File.exist?("#{Dir.pwd}/#{dir}/.github")
   f = File.open("#{Dir.pwd}/#{dir}/.github/CODEOWNERS", 'w')
-  f.puts "* sous-chefs/#{dir}"
+  f.puts "* @sous-chefs/#{dir}"
 end
