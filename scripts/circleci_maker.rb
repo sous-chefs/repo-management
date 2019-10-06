@@ -57,4 +57,9 @@ yaml_config = circle_config.to_yaml
 # The & is not part of the standard, so we have to hack it in
 yaml_config.sub!('lint_and_unit:', 'lint_and_unit: &lint_and_unit')
 yaml_config.gsub!('"*lint_and_unit"', '*lint_and_unit')
+yaml_config.gsub!('- ', '  - ')
+yaml_config.gsub!('suite:', '  suite:')
+yaml_config.gsub!('name:', '  name:')
+yaml_config.gsub!('requires:', '  requires:')
+yaml_config.gsub!('context:', '  context:')
 puts(yaml_config)
