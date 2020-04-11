@@ -8,6 +8,8 @@ A repo of helpful things for managing the many repos in sous-chefs org (easily u
 
 ## Usage
 
+### Scripts
+
 Most scripts require you be in a directory containing all the repos you'd like to act on, for example:
 
 ```shell
@@ -25,6 +27,12 @@ Most scripts require you be in a directory containing all the repos you'd like t
 | open_pull_requests.rb | Opens a pull request | `ruby open_pull_requests.rb <user_name> <token|password> <pr_title> <pr_body> <your_branch_name>` |
 | update_labels.sh | Removes the Dangerfile PR label check | `update_labels.sh` |
 | watch_repos.rb | Watches all repos in org | `ruby watch_repos.rb <GITHUB_USERNAME> <GITHUB_PASSWORD_OR_TOKEN>` |
+
+### Standard Files
+
+Each folder under `standardfiles/` represents a standard file structure we want in a certian type of repository, such as a cookbook.
+
+Automated tools ensure these are kept in sync.
 
 ## Contributors
 

@@ -1,3 +1,4 @@
+#!/home/jfield/.rubies/2.6.0/bin/ruby
 # usage: run in a directory with all git repos for which you want to open pull requests
 # ruby open_pull_requests.rb <user_name> <token|password> <pr_title> <pr_body> <your_branch_name>
 require 'net/http'
