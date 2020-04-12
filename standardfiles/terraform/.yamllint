@@ -3,4 +3,3 @@ rules:
   line-length:
     max: 256
     level: warning
-
