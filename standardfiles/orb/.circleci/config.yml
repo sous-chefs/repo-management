@@ -1,0 +1,15 @@
+---
+version: 2.1
+orbs:
+  kitchen: sous-chefs/kitchen@2
+  orb-tools: circleci/orb-tools@8
+
+workflows:
+  kitchen:
+    jobs:
+      # Lint and Unit Test
+      - kitchen/danger:
+          name: danger
+          context: Danger
+      - orb-tools/lint:
+          name: orb-lint
