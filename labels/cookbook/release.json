@@ -1,5 +1,5 @@
 {
-  "name": "Bug",
+  "name": "release",
   "color": "#0e8a16",
   "description": "Release to supermarket when merged"
 }
