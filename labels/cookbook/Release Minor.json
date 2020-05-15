@@ -1,0 +1,5 @@
+{
+  "name": "Release: Minor",
+  "color": "#FF69B4",
+  "description": "Release to Chef Supermarket as a minor release when merged"
+}

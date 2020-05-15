@@ -1,0 +1,5 @@
+{
+  "name": "Release: Major",
+  "color": "#FFC0CB",
+  "description": "Release to Chef Supermarket as a major change when merged"
+}
