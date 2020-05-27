@@ -1,7 +1,6 @@
 {
   "recommendations": [
-      "chef-software.chef",
-      "rebornix.ruby",
+      "mauve.terraform",
       "editorconfig.editorconfig"
   ]
 }
