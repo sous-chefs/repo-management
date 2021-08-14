@@ -1,0 +1,5 @@
+{
+  "name": "Skip: Announcements",
+  "color": "#11ECBF",
+  "description": "On Release this will not put a message in the #Announcements slack channel"
+}
