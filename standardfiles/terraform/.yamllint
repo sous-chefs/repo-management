@@ -7,7 +7,6 @@ extends: default
 rules:
   line-length:
     max: 256
-    max: 256
     level: warning
   document-start: disable
   braces:
