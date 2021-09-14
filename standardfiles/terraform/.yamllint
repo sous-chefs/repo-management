@@ -1,6 +1,22 @@
 ---
+ignore: |
+  charts
+
 extends: default
+extends: default
+
+rules:
 rules:
   line-length:
+  line-length:
+    max: 256
     max: 256
     level: warning
+    level: warning
+  document-start: disable
+  braces:
+    forbid: false
+    min-spaces-inside: 0
+    max-spaces-inside: 1
+    min-spaces-inside-empty: -1
+    max-spaces-inside-empty: -1
