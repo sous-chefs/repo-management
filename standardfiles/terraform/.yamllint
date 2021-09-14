@@ -3,15 +3,11 @@ ignore: |
   charts
 
 extends: default
-extends: default
 
 rules:
-rules:
-  line-length:
   line-length:
     max: 256
     max: 256
-    level: warning
     level: warning
   document-start: disable
   braces:
