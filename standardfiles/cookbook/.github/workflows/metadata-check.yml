@@ -1,0 +1,25 @@
+---
+name: 'Check Metadata'
+
+"on":
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  actions: write
+  checks: write
+  statuses: write
+  issues: read
+
+jobs:
+  check-metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Check Metadata
+        uses: damacus/check-chef-metadata-action@0.0.2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
