@@ -7,4 +7,4 @@ name: ci
     branches: [main]
 # jobs:
 #   lint-unit:
-#     uses: sous-chefs/.github/.github/workflows/lint-unit.yml@0.1.0
+#     uses: sous-chefs/.github/.github/workflows/lint-unit.yml@2.0.1

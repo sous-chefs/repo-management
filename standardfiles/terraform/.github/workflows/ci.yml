@@ -16,14 +16,15 @@ jobs:
       - name: Run yaml Lint
         uses: actionshub/yamllint@main
 
-  mdl:
+  markdownlint-cli2:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
         uses: actions/checkout@v3
       - name: Run Markdown Lint
-        uses: actionshub/markdownlint@main
-
+        uses: DavidAnson/markdownlint-cli2-action@v9
+        with:
+          globs: "**/*.md"
   json:
     runs-on: ubuntu-latest
     steps:
