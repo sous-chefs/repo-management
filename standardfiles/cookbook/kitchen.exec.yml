@@ -1,12 +1,6 @@
 ---
-driver:
-  name: exec
-
-transport:
-  name: exec
-
-provisioner:
-  name: chef_zero
+driver: { name: exec }
+transport: { name: exec }
 
 platforms:
   - name: macos-latest
