@@ -17,7 +17,7 @@ repos.each do |repo|
     "title": ARGV[2].to_s,
     "body": ARGV[3].to_s,
     "head": ARGV[4].to_s,
-    "base": 'master' }.to_json
+    "base": 'main' }.to_json
   pr_http = Net::HTTP.new(pr_uri.hostname, pr_uri.port)
   pr_http.use_ssl = (pr_uri.scheme == 'https')
   pr_resp = pr_http.request(pr_req)
